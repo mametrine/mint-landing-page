@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "interregular";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/inter-regular-webfont.woff2) format("woff2"),
+      url(fonts/inter-regular-webfont.woff) format("woff");
+  }
+  @font-face {
+    font-family: "intersemi_bold";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(fonts/inter-semibold-webfont.woff2) format("woff2"),
+      url(fonts/inter-semibold-webfont.woff) format("woff")
+  }
+  @font-face {
+    font-family: "interextra_bold";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(fonts/inter-extrabold-webfont.woff2) format("woff2"),
+      url(fonts/inter-extrabold-webfont.woff) format("woff");
+  }
+}
