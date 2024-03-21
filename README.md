@@ -1,5 +1,5 @@
 ## Proposal Landing Page
 
-Build: `npx parcel src/index.html`
+Install: `npm i`
 
-Parcel local server: http://localhost:1234
+Build: `npx parcel src/index.html`
