@@ -11,29 +11,29 @@ const floatingIsland2 = new URL(
 const klarnaLogo = new URL("../images/klarna-logo.png", import.meta.url);
 
 export const Hero = () => (
-  <div className="flex flex-wrap mt-20">
+  <div className="w-full flex flex-row flex-wrap xl:mt-20">
     <div className="grow">
-      <h1 className="max-w-[560px] mt-14 font-interextrabold text-6xl leading-tight tracking-tight text-white">
+      <h1 className="max-w-[560px] mt-8 font-interextrabold text-center leading-tight tracking-tight text-white text-[3rem] xl:text-[4.75rem] xl:mt-14 xl:text-left">
         Tickets selling fast. Split the cost or pay in 30 days.
       </h1>
-      <div className="flex items-center mt-12">
-        <div>
-          <CTAButton />
-        </div>
-        <div>
-          <img className="max-w-[124px] ml-5" src={klarnaLogo} alt="Klarna Logo" />
-        </div>
+      <div className="flex flex-col items-center mt-8 xl:flex-row xl:mt-12">
+        <CTAButton marginX="0" />
+        <img
+          className="max-w-[80px] mt-5 xl:mt-0 xl:ml-5 xl:max-w-[120px]"
+          src={klarnaLogo}
+          alt="Klarna Logo"
+        />
       </div>
     </div>
     <div className="grow">
       <div className="flex flex-col">
         <img
-          className="max-w-[560px]"
+          className="w-full max-w-[560px] mt-8 xl:mt-0"
           src={floatingIsland1}
           alt="Floating Festival Island"
         />
         <img
-          className="max-w-[308px] self-end mr-10 mt-[50px]"
+          className="hidden w-full max-w-[308px] xl:block xl:mr-10 xl:mt-9 xl:self-end"
           src={floatingIsland2}
           alt="Floating Festival Island"
         />
