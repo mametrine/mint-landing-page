@@ -16,7 +16,7 @@ export const Hero = () => (
       <h1 className="max-w-[560px] mt-8 font-interextrabold text-center leading-tight tracking-tight text-white text-[3rem] xl:text-[4.75rem] xl:mt-14 xl:text-left">
         Tickets selling fast. Split the cost or pay in 30 days.
       </h1>
-      <div className="flex flex-col items-center mt-8 xl:flex-row xl:mt-12">
+      <div className="flex flex-col items-center mt-[50px] xl:flex-row xl:mt-12">
         <CTAButton marginX="0" />
         <img
           className="max-w-[80px] mt-5 xl:mt-0 xl:ml-5 xl:max-w-[120px]"
