@@ -3,3 +3,5 @@
 Install: `npm i`
 
 Build: `npm run build`
+
+Serve: `npm run serve`

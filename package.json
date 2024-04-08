@@ -10,6 +10,7 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "build": "parcel build ./src/index.html"
+    "build": "parcel build ./src/index.html",
+    "serve": "parcel serve ./src/index.html --open"
   }
 }
