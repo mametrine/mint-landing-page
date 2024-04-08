@@ -11,9 +11,9 @@ const floatingIsland2 = new URL(
 const klarnaLogo = new URL("../images/klarna-logo.png", import.meta.url);
 
 export const Hero = () => (
-  <div className="w-full flex flex-row flex-wrap xl:mt-20">
+  <div className="w-full flex flex-row flex-wrap xl:px-8 xl:mt-12 2xl:mt-20 2xl:px-0">
     <div className="grow">
-      <h1 className="max-w-[560px] mt-8 font-interextrabold text-center leading-tight tracking-tight text-white text-[3rem] xl:text-[4.75rem] xl:mt-14 xl:text-left">
+      <h1 className="max-w-[560px] mt-8 font-interextrabold text-center leading-tight tracking-tight text-white text-[3rem] xl:text-[4.5rem] xl:mt-14 xl:text-left 2xl:text-[4.75rem]">
         Tickets selling fast. Split the cost or pay in 30 days.
       </h1>
       <div className="flex flex-col items-center mt-[50px] xl:flex-row xl:mt-12">
@@ -28,7 +28,7 @@ export const Hero = () => (
     <div className="grow">
       <div className="flex flex-col">
         <img
-          className="w-full max-w-[560px] mt-8 xl:mt-0"
+          className="w-full mt-8 xl:max-w-[520px] xl:mt-0 2xl:max-w-[560px]"
           src={floatingIsland1}
           alt="Floating Festival Island"
         />

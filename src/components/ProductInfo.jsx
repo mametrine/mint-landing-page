@@ -1,4 +1,4 @@
-import { requestData } from "../js/data-service.js";
+import { requestData, getTable } from "../js/data-service.js";
 import { useEffect, useState } from "react";
 import { CTAButton } from "./CTAButton";
 import { ProductTable } from "./ProductTable";
@@ -15,11 +15,11 @@ export const ProductInfo = () => {
 
   useEffect(() => {
     let data = {};
-    const selectDataTable = async () => {
+    const setupProductState = async () => {
       data = await requestData();
-      setTable(data["tickets"]);
+      setTable(getTable(data));
     };
-    selectDataTable();
+    setupProductState();
   }, []);
 
   return (
