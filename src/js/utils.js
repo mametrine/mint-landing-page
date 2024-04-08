@@ -7,3 +7,5 @@ const id = () => {
 };
 
 export const getId = id();
+
+// This is fine because there are no re-renders of lists
