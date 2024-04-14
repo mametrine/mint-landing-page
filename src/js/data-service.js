@@ -15,6 +15,15 @@ const getDate = ({ date }) => date;
 
 const getTicketType = ({ type }) => type;
 
-const getPrice = ({ price }, index) => price[index];
+const getTier = ({ tier }) => tier;
 
-export { requestData, getTable, getDate, getTicketType, getPrice };
+const formatCurrency = (amount) => {
+  return new Intl.NumberFormat("en-GB", {
+    style: "currency",
+    currency: "GBP",
+  }).format(amount);
+};
+
+const getPrice = ({ price }) => formatCurrency(price);
+
+export { requestData, getTable, getDate, getTicketType, getTier, getPrice };
